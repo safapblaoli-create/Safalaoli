@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Kopi Koko - Beranda</title>
+    <style>
+        /* Reset dasar untuk konsistensi */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header dengan background gradien dan gambar latar (opsional, bisa diganti dengan URL gambar) */
+        header {
+            background: linear-gradient(135deg, #8B4513, #D2691E); /* Gradien coklat untuk tema kopi */
+            background-image: url('https://example.com/coffee-background.jpg'); /* Ganti dengan URL gambar kopi jika ada */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Overlay gelap untuk kontras */
+            z-index: 1;
+        }
+
+        header h1 {
+            font-family: 'Dancing Script', cursive; /* Font cursive untuk kesan elegan */
+            font-size: 3rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 2;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Bar menu navigasi */
+        nav {
+            background-color: #654321; /* Coklat gelap */
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            background-color: #D2691E; /* Coklat terang saat hover */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* Responsivitas untuk mobile */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        /* Konten utama */
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #8B4513;
+        }
+
+        main p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+    </style>
+    <!-- Link ke Google Fonts untuk font cursive -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Warung Kopi Koko</h1>
+        <p>Nikmati Secangkir Kopi Terbaik di Tempat Kami</p>
+    </header>
+
+    <!-- Bar Menu Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="Varian Kopi.html">Varian Kopi</a></li>
+            <li><a href="about.html">Foto saya</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten utama -->
+    <main>
+        <h2>Selamat Datang di Warung Kopi Koko</h2>
+        <p>Tempat terbaik untuk menikmati kopi spesial, suasana yang nyaman, dan hidangan lezat. Kami menyajikan kopi dari biji pilihan dengan cita rasa autentik.</p>
+        <p>Jelajahi menu kami atau hubungi kami untuk informasi lebih lanjut!</p>
+    </main>
+</body>
+</html>
